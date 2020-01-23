@@ -28,8 +28,6 @@ type TripleliftNativeExtInfo struct {
 	// Array is used for deserialization.
 	PublisherWhitelist []string `json:"publisher_whitelist"`
 
-	Endpoint string `json:"endpoint"`
-
 	// Map is used for optimized memory access and should be constructed after deserialization.
 	PublisherWhitelistMap map[string]bool
 }
@@ -198,5 +196,9 @@ func NewTripleliftNativeBidder(client *http.Client, endpoint string, extraInfo s
 
 	return &TripleliftNativeAdapter{
 		extInfo:  extInfo,
+<<<<<<< HEAD
 		endpoint: extInfo.Endpoint}
+=======
+		endpoint: endpoint}
+>>>>>>> origin/master
 }
