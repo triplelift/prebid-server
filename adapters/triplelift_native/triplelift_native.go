@@ -196,9 +196,5 @@ func NewTripleliftNativeBidder(client *http.Client, endpoint string, extraInfo s
 
 	return &TripleliftNativeAdapter{
 		extInfo:  extInfo,
-<<<<<<< HEAD
-		endpoint: extInfo.Endpoint}
-=======
 		endpoint: endpoint}
->>>>>>> origin/master
 }
